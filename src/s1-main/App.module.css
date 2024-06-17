@@ -2,12 +2,12 @@
     --header_height: 60px;
     margin: 0 auto;
     padding: 0 10px;
-    width: 1280px;
+    max-width: 1280px;
 
 }
 
 .hw {
-    max-width: 1280px;
+    /*max-width: 1280px;*/
     width: 100%;
     border: 1px solid lightgray;
     padding: 25px;
