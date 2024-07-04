@@ -11,6 +11,7 @@ export const pureAddUser = (name: string, setError: any, setName: (name: string)
     // если имя пустое - показать ошибку, иначе - добавить юзера и очистить инпут
     if (name.trim() === "") {
         setError("Ошибка! Введите имя!")
+        setName("")
     } else {
         addUserCallback(name)
         setName("")
