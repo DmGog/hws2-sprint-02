@@ -5,7 +5,7 @@
     line-height: 20px;
     border-radius: 3px;
     border: none;
-    width: 129px;
+    max-width: 129px;
     height: 30px;
     cursor: pointer;
 }
