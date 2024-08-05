@@ -6,6 +6,7 @@
 }
 
 .item:last-of-type {
+
 }
 
 .users {
@@ -33,22 +34,14 @@
 }
 
 .nameCol {
-    width: 100%;
-    font-weight: 600;
     padding-left: 16px;
+    padding-right: 180px;
+    font-weight: 600;
+
 }
 
 .ageCol {
-    min-width: 320px;
+    max-width: 320px;
+    width: 100%;
     font-weight: 600;
 }
-
-/*.name {*/
-/*    border-bottom: 1px solid #E5E5E5;*/
-/*    padding-left: 16px;*/
-/*}*/
-
-/*.age {*/
-/*    border-bottom: 1px solid #E5E5E5;*/
-/*    font-weight: 500;*/
-/*}*/
