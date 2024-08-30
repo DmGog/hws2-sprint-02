@@ -29,7 +29,7 @@
 .friendText:after {
     content: "";
     position: absolute;
-    background-color: rgb(245, 247, 251);
+    background-color: rgba(245, 247, 251);
     width: 20px;
     height: 20px;
     bottom: 0;

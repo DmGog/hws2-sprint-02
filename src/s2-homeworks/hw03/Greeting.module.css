@@ -23,7 +23,6 @@
     font-weight: 500;
     font-size: 16px;
     padding: 8px 12px;
-    color: #000;
 }
 
 .input:focus {
@@ -41,7 +40,6 @@
     font-weight: 500;
     font-size: 16px;
     padding: 8px 12px;
-    color: #000;
     margin-bottom: 7px;
 }
 
@@ -79,11 +77,9 @@
 .text {
     font-weight: 400;
     font-size: 14px;
-    color: rgba(0, 0, 0, 0.5);
 }
 
 .greeting {
     font-weight: 500;
     font-size: 14px;
-    color: #000;
 }
