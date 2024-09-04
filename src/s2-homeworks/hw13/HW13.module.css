@@ -1,22 +1,50 @@
+
 .buttonsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    margin-bottom: 30px;
 }
 
 .responseContainer {
+    height: 320px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .imageContainer {
+    margin-right: 94px;
 }
 
 .image {
+    background-repeat: no-repeat;
+    width: 100%;
 }
 
-.textContainer{
+.textContainer {
+    max-width: 510px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .code {
+    font-weight: 500;
+    font-size: 30px;
+    font-family: "Montserrat", sans-serif;
+    margin-bottom: 12px;
 }
 
 .text {
+    font-weight: 500;
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
 }
+
 .info {
+    font-weight: 500;
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
 }

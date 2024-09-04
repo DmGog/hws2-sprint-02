@@ -1,6 +1,5 @@
 .button {
-    max-width: 140px;
-    width: 100%;
+    min-width: 140px;
     height: 30px;
     padding: 5px 20px;
     font-size: 14px;
@@ -19,7 +18,6 @@
 
 .secondary {
     border: 1px solid #06c;
-    width: 176px;
     color: #06c;
     background-color: #FFFFFF;
 
