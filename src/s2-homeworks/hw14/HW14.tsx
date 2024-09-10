@@ -34,23 +34,14 @@ const HW14 = () => {
         setLoading(true)
         getTechs(value)
             .then((res) => {
-                if (res && res.data && Array.isArray(res.data.techs)) {
-                    setTechs(res.data.techs);
-                } else {
-                    console.error("Unexpected response format:", res);
-                }
-            }).catch((error) => {
-            console.error("Error fetching techs:", error);
-        })
-            .finally(() => {
-                setLoading(false);
-            });
+                if (res) setTechs(res.data.techs)
+                setLoading(false)
+            })
     }
 
     const onChangeText = (value: string) => {
         setFind(value)
-        setSearchParams({ find: value }); // Обновляем параметры URL
-        sendQuery(value); // Отправляем запрос с новым значением
+        setSearchParams(value); // Обновляем параметры URL
     }
 
     useEffect(() => {
@@ -71,16 +62,16 @@ const HW14 = () => {
 
             <div className={s2.hw}>
                 <div className={s.wrapper}>
-                <SuperDebouncedInput
-                    id={"hw14-super-debounced-input"}
-                    value={find}
-                    onChangeText={onChangeText}
-                    onDebouncedChange={sendQuery}
-                />
+                    <SuperDebouncedInput
+                        id={"hw14-super-debounced-input"}
+                        value={find}
+                        onChangeText={onChangeText}
+                        onDebouncedChange={sendQuery}
+                    />
 
-                <div id={"hw14-loading"} className={s.loading}>
-                    {isLoading ? "...ищем" : <br/>}
-                </div>
+                    <div id={"hw14-loading"} className={s.loading}>
+                        {isLoading ? "...ищем" : <br/>}
+                    </div>
                 </div>
 
                 {mappedTechs}

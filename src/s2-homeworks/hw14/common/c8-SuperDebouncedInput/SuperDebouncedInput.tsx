@@ -43,7 +43,7 @@ const SuperDebouncedInput: React.FC<SuperDebouncedInputPropsType> = (
             }, 1500);
 
             // Сохранить новый таймер ID в состоянии
-            setTimerId(+newTimerId);
+            setTimerId(Number(newTimerId));
             //
         }
     }
