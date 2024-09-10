@@ -20,7 +20,9 @@
 }
 
 .superInput {
-
+    max-width: 468px;
+    width: 100%;
+    margin-bottom: 11px;
 }
 
 .errorInput {
