@@ -1,27 +1,60 @@
+
 .tech {
-    width: 50vw;
+    width: 50%;
 }
 
 .developer {
-
+    width: 50%;
 }
 
 .techHeader {
-    width: 50vw;
+    width: 50%;
+    display: flex;
+    gap: 6px;
 }
 
 .developerHeader {
-
+    display: flex;
+    gap: 6px;
 }
 
 .row {
     display: flex;
+    padding: 12px 18px;
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    border-top: solid 1px #E5E5E5;
+    max-width: 606px;
 }
 
 .rowHeader {
     display: flex;
+    max-width: 606px;
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 16px;
+    background-color: #E5E5E5;
+    padding: 12px 18px;
+
 }
 
 .loading {
+    position: absolute;
+    width: 90px;
+    margin: 148px 320px;
+    height: 90px;
+    background: url("./icons/loading.png") center;
+    animation: spin 1s infinite linear;
+    color: transparent;
+}
 
+@keyframes spin {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
