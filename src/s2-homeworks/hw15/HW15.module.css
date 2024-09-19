@@ -39,22 +39,21 @@
     padding: 12px 18px;
 
 }
-
-.loading {
-    position: absolute;
-    width: 90px;
-    margin: 148px 320px;
-    height: 90px;
-    background: url("./icons/loading.png") center;
-    animation: spin 1s infinite linear;
-    color: transparent;
+.wrapperLoading{
+    position: relative;
+    max-width: 700px;
 }
 
-@keyframes spin {
-    from {
-        transform: rotate(0);
-    }
-    to {
-        transform: rotate(360deg);
-    }
+.wrapper{
+    transition: filter 0.3s ease;
+}
+
+.loadingActive {
+    filter: blur(5px);
+}
+.loading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
