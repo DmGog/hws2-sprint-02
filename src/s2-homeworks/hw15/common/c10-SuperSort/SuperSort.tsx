@@ -1,6 +1,6 @@
 import React from 'react'
-import down from '../../icons/down.png'
-import up from '../../icons/up.png'
+import down from '../../icons/down.svg'
+import up from '../../icons/up.svg'
 import arrows from '../../icons/arrows.png'
 // добавить в проект иконки и импортировать
 const downIcon = down
